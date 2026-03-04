@@ -1,0 +1,201 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\advices\\advice.model.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:advices\\advice.model.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\users\\user.model.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:users\\user.model.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\advices\\advices.controller.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:advices\\advices.controller.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\advices\\advice.service.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:advices\\advice.service.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\events\\event.service.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:events\\event.service.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\_helpers\\db.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:_helpers\\db.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\config.sqlserver.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:config.sqlserver.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\events\\events.controller.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:events\\events.controller.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "user.model.js",
+              "DocumentMoniker": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\users\\user.model.js",
+              "RelativeDocumentMoniker": "users\\user.model.js",
+              "ToolTip": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\users\\user.model.js",
+              "RelativeToolTip": "users\\user.model.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-03-03T20:11:11.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "advices.controller.js",
+              "DocumentMoniker": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\advices\\advices.controller.js",
+              "RelativeDocumentMoniker": "advices\\advices.controller.js",
+              "ToolTip": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\advices\\advices.controller.js",
+              "RelativeToolTip": "advices\\advices.controller.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-03-03T20:10:09.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "advice.service.js",
+              "DocumentMoniker": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\advices\\advice.service.js",
+              "RelativeDocumentMoniker": "advices\\advice.service.js",
+              "ToolTip": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\advices\\advice.service.js",
+              "RelativeToolTip": "advices\\advice.service.js",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-03-03T20:09:50.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "advice.model.js",
+              "DocumentMoniker": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\advices\\advice.model.js",
+              "RelativeDocumentMoniker": "advices\\advice.model.js",
+              "ToolTip": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\advices\\advice.model.js",
+              "RelativeToolTip": "advices\\advice.model.js",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-03-03T20:08:42.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "event.service.js",
+              "DocumentMoniker": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\events\\event.service.js",
+              "RelativeDocumentMoniker": "events\\event.service.js",
+              "ToolTip": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\events\\event.service.js",
+              "RelativeToolTip": "events\\event.service.js",
+              "ViewState": "AgIAAPAAAAAAAAAAAAAiwP8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-03-01T00:04:23.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "events.controller.js",
+              "DocumentMoniker": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\events\\events.controller.js",
+              "RelativeDocumentMoniker": "events\\events.controller.js",
+              "ToolTip": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\events\\events.controller.js",
+              "RelativeToolTip": "events\\events.controller.js",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-03-01T00:04:11.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": ".env",
+              "DocumentMoniker": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\.env",
+              "RelativeDocumentMoniker": ".env",
+              "ToolTip": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\.env",
+              "RelativeToolTip": ".env",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-02-28T21:28:33.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "config.sqlserver.json",
+              "DocumentMoniker": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\config.sqlserver.json",
+              "RelativeDocumentMoniker": "config.sqlserver.json",
+              "ToolTip": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\config.sqlserver.json",
+              "RelativeToolTip": "config.sqlserver.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-28T21:18:07.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "db.js",
+              "DocumentMoniker": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\_helpers\\db.js",
+              "RelativeDocumentMoniker": "_helpers\\db.js",
+              "ToolTip": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\_helpers\\db.js",
+              "RelativeToolTip": "_helpers\\db.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-02-28T21:07:43.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "server.js",
+              "DocumentMoniker": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\server.js",
+              "RelativeDocumentMoniker": "server.js",
+              "ToolTip": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\server.js",
+              "RelativeToolTip": "server.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-02-28T21:07:34.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "config.json",
+              "DocumentMoniker": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\config.json",
+              "RelativeDocumentMoniker": "config.json",
+              "ToolTip": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice\\advice_node-mysql-api-master\\config.json",
+              "RelativeToolTip": "config.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-28T21:07:06.886Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
