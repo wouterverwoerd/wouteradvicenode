@@ -149,7 +149,7 @@ function innerQuery(connection, callback) {
         if (err) throw err;
         //console.log(result);
         result.forEach(row => {
-            results.push({ id: row.id, description: row.description, eventDate: row.eventDate });
+            results.push({ id: row.id, description: row.description, eventDate: row.eventDate, eventFilename: row.eventFilename });
         });
 
         connection.end(function (err) {
@@ -205,7 +205,7 @@ async function getCombined2() {
  //  console.log(outerresults);
     for (const current of outerresults) {
         var thisvalue = current.id;
-        var innerStatement2 = 'select id, description, eventDate from Events where adviceid = ' + String(thisvalue);
+        var innerStatement2 = 'select id, description, eventDate, eventFilename from Events where adviceid = ' + String(thisvalue);
        // console.log(innerStatement2);
         innerStatement = innerStatement2;
         var innerresults = await doInnerQuery();
@@ -220,7 +220,8 @@ async function getCombined2() {
             thisEvent.eventID = currentevent.id;
             thisEvent.eventDescription = currentevent.description;
             thisEvent.eventDate = currentevent.eventDate;
-           // console.log(thisEvent);
+            thisEvent.eventFilename = currentevent.eventFilename;
+            console.log(thisEvent);
             thiscombined.Events.push(thisEvent);
         }
         combinedResults.push(thiscombined);

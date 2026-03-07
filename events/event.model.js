@@ -7,7 +7,8 @@ function model(sequelize) {
         description: { type: DataTypes.STRING, allowNull: false },
         userid: { type: DataTypes.INTEGER, allowNull: false },
         adviceid: { type: DataTypes.INTEGER, allowNull: false },
-        eventDate: { type: DataTypes.STRING, allowNull: false }
+        eventDate: { type: DataTypes.STRING, allowNull: false },
+        eventFilename: { type: DataTypes.STRING, allowNull: false }
     };
 
     const options = {

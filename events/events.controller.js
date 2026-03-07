@@ -69,7 +69,8 @@ function createSchema(req, res, next) {
         description: Joi.string().required(),
         userid: Joi.string().required(),
         adviceid: Joi.string().required(),
-        eventDate: Joi.string().required()
+        eventDate: Joi.string().required(),
+        eventFilename: Joi.string().required()
     });
     validateRequest(req, next, schema);
 }
@@ -79,7 +80,8 @@ function updateSchema(req, res, next) {
         description: Joi.string().empty(''),
         userid: Joi.string().empty(''),
         adviceid: Joi.string().empty(''),
-        eventDate: Joi.string().empty('')
+        eventDate: Joi.string().empty(''),
+        eventFilename: Joi.string().empty('')
     });
     validateRequest(req, next, schema);
 }
