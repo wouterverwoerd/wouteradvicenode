@@ -4,11 +4,11 @@ module.exports = model;
 
 function model(sequelize) {
     const attributes = {
-        description: { type: DataTypes.STRING, allowNull: false },
+        description: { type: DataTypes.STRING(2000), allowNull: false },
         userid: { type: DataTypes.INTEGER, allowNull: false },
         adviceid: { type: DataTypes.INTEGER, allowNull: false },
         eventDate: { type: DataTypes.STRING, allowNull: false },
-        eventFilename: { type: DataTypes.STRING, allowNull: false }
+        eventFilename: { type: DataTypes.STRING(1000), allowNull: false }
     };
 
     const options = {
