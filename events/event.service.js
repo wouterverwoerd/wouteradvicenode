@@ -132,11 +132,11 @@ async function getCombined3() {
 		            'eventFilename', e.eventFilename
                 )
             )
-            FROM events e 
+            FROM Events e 
             WHERE e.adviceid = a.id
         ) as 'Events'
     
-    FROM advice a;`, {
+    FROM Advice a;`, {
         type: QueryTypes.SELECT,
     });
     return combinedevents;
