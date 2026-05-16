@@ -10,8 +10,8 @@ const eventService = require('./event.service');
 
 router.get('/', getAll);
 router.get('/combined', getCombined);
-router.get('/combined2', getCombined3); // getCombined2 has been deprecated and replaced with version 3
-router.get('/combined3', getCombined2);
+router.get('/combined2', getCombined2); // getCombined2 has been deprecated and replaced with version 3
+router.get('/combined3', getCombined3);
 router.get('/:id', getById);
 router.post('/', createSchema, create);
 router.put('/:id', updateSchema, update);
