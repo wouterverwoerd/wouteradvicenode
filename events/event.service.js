@@ -30,6 +30,7 @@ module.exports = {
     getCombined,
     getCombined2,
     getCombined3,
+    getCombined4,
     getById,
     create,
     update,
@@ -50,6 +51,10 @@ async function getCombined2() {
 
 async function getCombined3() {
     return await getCombined3();
+}
+
+async function getCombined4() {
+    return await getCombined4();
 }
 
 
@@ -199,6 +204,65 @@ function innerQuery(connection, callback) {
     });
 }
 
+function generalQuery(connection, callback) {
+
+    var results = [];
+    connection.query(`SELECT 
+    
+        a.id as 'adviceID',
+        a.content as 'adviceDescription',
+	    a.filename as 'adviceFilename',
+        (
+            SELECT JSON_ARRAYAGG(
+                JSON_OBJECT(
+                    'eventID', e.id,
+                    'eventDescription', e.description,
+                    'eventDate', e.eventDate,
+		            'eventFilename', e.eventFilename
+                )
+            )
+            FROM Events e 
+            WHERE e.adviceid = a.id
+        ) as 'Events'
+    
+    FROM Advice a;`, function (err, result, fields) {
+        if (err) throw err;
+       // console.log(result);
+        result.forEach(row => {
+
+            var events = JSON.parse(row.Events);
+         //   console.log(events);
+            var eventarray = [];
+            if (events != null) {
+                events.forEach(eventrow => {
+                    eventarray.push({
+                        eventID: eventrow.eventID,
+                        eventDate: eventrow.eventDate,
+                        eventFilename: eventrow.eventFilename,
+                        eventDescription: eventrow.eventDescription
+                    })
+                })
+            };
+
+            results.push({
+                adviceID: row.adviceID,
+                adviceDescription: row.adviceDescription,
+                adviceFilename: row.adviceFilename,
+                Events: eventarray
+            });
+        });
+
+        connection.end(function (err) {
+            if (err) {
+                return console.error('error during disconnection: ' + err.message);
+            }
+            console.log('Connection ended gracefully.');
+        });
+
+        callback(null, results);
+    });
+}
+
 function doInnerQuery() {
     // console.log(0);
     return new Promise(resolve => {
@@ -224,6 +288,39 @@ function doInnerQuery() {
         connection.connect();
     }).then((message) => {
       //  console.log("Success"); // Executed when the promise resolves
+        return message;
+    })
+        .catch((error) => {
+            console.error("Error:", error.message); // Executed if the promise rejects
+        })
+        .finally(() => {
+            console.log("Operation completed (success scenario).\n"); // Executed regardless of resolution or rejection
+        });
+}
+
+function doGeneralQuery() {
+    // console.log(0);
+    return new Promise(resolve => {
+        // console.log(dbConfig);
+        // var connection = new Connection(database);
+
+        const connection = mysql.createConnection(connectionConfig);
+
+        var myresults = [];
+        connection.on('connect', function (err) {
+            if (err) {
+                console.error('Connection Error: ', err);
+            } else {
+                console.log('Successfully connected to MySQL!');
+                generalQuery(connection, function (error, results) {
+                    myresults = results;
+                    resolve(myresults);
+                });
+            }
+        });
+        connection.connect();
+    }).then((message) => {
+        //  console.log("Success"); // Executed when the promise resolves
         return message;
     })
         .catch((error) => {
@@ -263,6 +360,13 @@ async function getCombined2() {
     };
     return combinedResults;
 }
+
+async function getCombined4() {
+    var combinedResults = [];
+    var outerresults = await doGeneralQuery();
+    return outerresults;
+}
+
 
 async function doOuterQuery() {
     // console.log(0);

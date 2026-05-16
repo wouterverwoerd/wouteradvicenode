@@ -10,8 +10,9 @@ const eventService = require('./event.service');
 
 router.get('/', getAll);
 router.get('/combined', getCombined);
-router.get('/combined2', getCombined2); // getCombined2 has been deprecated and replaced with version 3
+router.get('/combined2', getCombined4); // getCombined2 has been deprecated and replaced with version 3
 router.get('/combined3', getCombined3);
+router.get('/combined4', getCombined4);
 router.get('/:id', getById);
 router.post('/', createSchema, create);
 router.put('/:id', updateSchema, update);
@@ -41,6 +42,12 @@ function getCombined2(req, res, next) {
 
 function getCombined3(req, res, next) {
     eventService.getCombined3()
+        .then(events => res.json(events))
+        .catch(next);
+}
+
+function getCombined4(req, res, next) {
+    eventService.getCombined4()
         .then(events => res.json(events))
         .catch(next);
 }
