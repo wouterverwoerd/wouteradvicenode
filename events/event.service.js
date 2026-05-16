@@ -29,6 +29,7 @@ module.exports = {
     getAll,
     getCombined,
     getCombined2,
+    getCombined3,
     getById,
     create,
     update,
@@ -46,6 +47,11 @@ async function getCombined() {
 async function getCombined2() {
     return await getCombined2();
 }
+
+async function getCombined3() {
+    return await getCombined3();
+}
+
 
 async function getById(id) {
     return await getEvent(id);
@@ -102,6 +108,35 @@ async function getCombined() {
     combinedevents = await combined.query('select u.firstname, u.lastname, u.email, u.id as userID, a.content, ' +
         ' a.filename, a.id as adviceID, e.description, e.id as eventID, e.eventDate, e.createdAt from advice a inner join users u on u.id = ' +
         ' a.userid inner join events e on a.id = e.adviceid', {
+        type: QueryTypes.SELECT,
+    });
+    return combinedevents;
+}
+
+async function getCombined3() {
+    const dialect = 'mysql';
+    const host = connectionConfig.host;
+    const combined = new Sequelize(connectionConfig.database, connectionConfig.user, connectionConfig.password, { host, dialect });
+    const { QueryTypes } = require('sequelize');
+    combinedevents = await combined.query(`SELECT 
+    
+        a.id as 'adviceID',
+        a.content as 'adviceDescription',
+	    a.filename as 'adviceFilename',
+        (
+            SELECT JSON_ARRAYAGG(
+                JSON_OBJECT(
+                    'eventID', e.id,
+                    'eventDescription', e.description,
+                    'eventDate', e.eventDate,
+		            'eventFilename', e.eventFilename
+                )
+            )
+            FROM events e 
+            WHERE e.adviceid = a.id
+        ) as 'Events'
+    
+    FROM advice a;`, {
         type: QueryTypes.SELECT,
     });
     return combinedevents;
