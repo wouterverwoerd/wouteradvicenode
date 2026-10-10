@@ -56,6 +56,7 @@ async function initialize() {
     db.Advice = require('../advices/advice.model')(sequelize);
     db.Event = require('../events/event.model')(sequelize);
     db.Idea = require('../ideas/idea.model')(sequelize);
+    db.Job = require('../jobs/job.model')(sequelize);
 
     
     //getCombined();

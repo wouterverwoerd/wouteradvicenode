@@ -14,6 +14,7 @@ app.use('/users', require('./users/users.controller'));
 app.use('/advices', require('./advices/advices.controller'));
 app.use('/events', require('./events/events.controller'));
 app.use('/ideas', require('./ideas/ideas.controller'));
+app.use('/jobs', require('./jobs/jobs.controller'));
 
 // global error handler
 app.use(errorHandler);
