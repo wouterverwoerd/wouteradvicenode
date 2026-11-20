@@ -47,7 +47,12 @@ async function initialize() {
         {
             dialect: 'mysql',
             dialectOptions: {
-                
+                ssl: {
+                    minVersion: 'TLSv1.2',
+                    rejectUnauthorized: true,
+                    // Uncomment the line below ONLY if your OS doesn't trust TiDB's CA automatically:
+                    // ca: fs.readFileSync('/path/to/isrgrootx1.pem')
+                }
             }
         });
 
